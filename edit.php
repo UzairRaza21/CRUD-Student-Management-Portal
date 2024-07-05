@@ -4,7 +4,7 @@ $sid = $_GET["stdid"];
 
 $sql = "SELECT * FROM students WHERE sid= {$sid}";
 $result = mysqli_query($conn, $sql) or die('Falied to fetch student');
-
+ 
 
 if (isset($_POST['subBtn'])) {
   include("conn.php");
